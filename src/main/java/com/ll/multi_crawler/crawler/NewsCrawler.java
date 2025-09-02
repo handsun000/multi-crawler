@@ -20,7 +20,9 @@ public class NewsCrawler {
             for (var el : links) {
                 String title = el.text();
                 String url = el.absUrl("href");
-                newsList.add(new NewsDto(title, url, ""));
+                String imgUrl = el.absUrl("src");
+
+                newsList.add(new NewsDto(title, url, imgUrl, ""));
             }
         }
         catch (Exception e) {

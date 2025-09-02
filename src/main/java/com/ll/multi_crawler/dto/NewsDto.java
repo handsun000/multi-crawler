@@ -10,5 +10,6 @@ import lombok.NoArgsConstructor;
 public class NewsDto {
     private String title;
     private String url;
+    private String imgUrl;
     private String summary;
 }
