@@ -15,19 +15,25 @@ public class NewsCrawler {
         List<NewsDto> newsList = new ArrayList<>();
         try {
             Document doc = Jsoup.connect("https://news.naver.com/").get();
-            Elements links = doc.select("ul.cnf_news_list a");
+            Elements linksCnf = doc.select("ul.cnf_news_list");
+            Elements linksCni = doc.select("ul.cni_news_list");
 
-            for (var el : links) {
-                String title = el.text();
-                String url = el.absUrl("href");
-                String imgUrl = el.absUrl("src");
-
-                newsList.add(new NewsDto(title, url, imgUrl, ""));
-            }
+            addList(linksCnf, newsList);
+            addList(linksCni, newsList);
         }
         catch (Exception e) {
             e.printStackTrace();
         }
         return newsList;
+    }
+
+    private static void addList(Elements linksCni, List<NewsDto> newsList) {
+        for (var el : linksCni) {
+            String title = el.text();
+            String url = el.select("a").attr("href");
+            String imgUrl = el.select("img").attr("src");
+
+            newsList.add(new NewsDto(title, url, imgUrl, ""));
+        }
     }
 }
