@@ -73,6 +73,8 @@ public class InfiniteScrollCrawler {
             // 후처리
             Document doc = Jsoup.parse(pageSource);
 
+            // 머신러닝
+
             return doc.body().html();
         } finally {
             driver.quit();
