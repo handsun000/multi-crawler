@@ -29,6 +29,9 @@ dependencies {
 	//crawler
 	implementation "org.jsoup:jsoup:1.21.1"
 	implementation "org.seleniumhq.selenium:selenium-java:4.34.0"
+    // ML
+    implementation("org.apache.opennlp:opennlp-tools:2.5.5")
+
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'com.h2database:h2'
 	runtimeOnly 'com.mysql:mysql-connector-j'

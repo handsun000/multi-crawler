@@ -70,12 +70,14 @@ public class InfiniteScrollCrawler {
 
             String pageSource = driver.getPageSource();
 
-            // 후처리
             Document doc = Jsoup.parse(pageSource);
+            String cleanText = doc.body().text();  // HTML에서 텍스트만 추출
 
-            // 머신러닝
+            cleanText = cleanText.replaceAll("\\s+", " ").trim();  // 불필요 공백 제거
 
-            return doc.body().html();
+            // cleanText를 머신러닝 모델 입력용으로 반환하거나 별도 처리
+
+            return cleanText;
         } finally {
             driver.quit();
         }
