@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class employCrawler {
+public class EmployCrawler {
     public List<NewsDto> crawl() {
         List<NewsDto> newsList = new ArrayList<>();
         try {
