@@ -1,7 +1,7 @@
-package com.ll.multi_crawler.service;
+package com.ll.multi_crawler.crawl.service;
 
-import com.ll.multi_crawler.crawler.NewsCrawler;
-import com.ll.multi_crawler.dto.NewsDto;
+import com.ll.multi_crawler.crawl.crawler.NewsCrawler;
+import com.ll.multi_crawler.crawl.dto.NewsDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

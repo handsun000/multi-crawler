@@ -1,10 +1,10 @@
-package com.ll.multi_crawler.controller;
+package com.ll.multi_crawler.crawl.controller;
 
-import com.ll.multi_crawler.crawler.NewsCrawler;
-import com.ll.multi_crawler.dto.NewsDto;
-import com.ll.multi_crawler.ml.service.OpenNlpNerService;
-import com.ll.multi_crawler.service.EmployCrawlerService;
-import com.ll.multi_crawler.service.NewsCrawlerService;
+import com.ll.multi_crawler.crawl.crawler.NewsCrawler;
+import com.ll.multi_crawler.crawl.dto.NewsDto;
+import com.ll.multi_crawler.ml.serivce.OpenNlpNerService;
+import com.ll.multi_crawler.crawl.service.EmployCrawlerService;
+import com.ll.multi_crawler.crawl.service.NewsCrawlerService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

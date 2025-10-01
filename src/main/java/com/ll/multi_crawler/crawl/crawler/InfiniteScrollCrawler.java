@@ -1,4 +1,4 @@
-package com.ll.multi_crawler.crawler;
+package com.ll.multi_crawler.crawl.crawler;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.openqa.selenium.JavascriptExecutor;

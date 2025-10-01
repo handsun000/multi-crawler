@@ -1,0 +1,53 @@
+네이버 B-ORG
+에서 O
+신입 B-JOB
+백엔드 I-JOB
+개발자 I-JOB
+채용 O
+중 O
+입니다 O
+. O
+
+카카오 B-ORG
+에서 O
+프론트엔드 B-JOB
+개발자 I-JOB
+를 O
+모집 O
+합니다 O
+. O
+
+1000만 B-SALARY
+원 I-SALARY
+연봉 I-SALARY
+제공 O
+. O
+
+쿠팡 B-ORG
+빅데이터 B-JOB
+엔지니어 I-JOB
+를 O
+모집 O
+합니다 O
+. O
+
+삼성전자 B-ORG
+하드웨어 B-JOB
+개발자 I-JOB
+신입 B-LEVEL
+경력 B-LEVEL
+무관 I-LEVEL
+. O
+
+연봉 B-SALARY
+3500만 I-SALARY
+원 I-SALARY
+이상 O
+. O
+
+LG B-ORG
+프론트엔드 B-JOB
+디자이너 I-JOB
+채용 O
+중 O
+. O

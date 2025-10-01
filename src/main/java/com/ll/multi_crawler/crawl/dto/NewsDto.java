@@ -1,4 +1,4 @@
-package com.ll.multi_crawler.dto;
+package com.ll.multi_crawler.crawl.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

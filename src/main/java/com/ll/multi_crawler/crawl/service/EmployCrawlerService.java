@@ -1,12 +1,9 @@
-package com.ll.multi_crawler.service;
+package com.ll.multi_crawler.crawl.service;
 
-import com.ll.multi_crawler.crawler.InfiniteScrollCrawler;
-import com.ll.multi_crawler.crawler.NewsCrawler;
-import com.ll.multi_crawler.dto.NewsDto;
+import com.ll.multi_crawler.crawl.crawler.InfiniteScrollCrawler;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.util.List;
 
 @Service
 public class EmployCrawlerService {

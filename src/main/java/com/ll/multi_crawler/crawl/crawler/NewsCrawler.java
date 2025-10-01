@@ -1,6 +1,6 @@
-package com.ll.multi_crawler.crawler;
+package com.ll.multi_crawler.crawl.crawler;
 
-import com.ll.multi_crawler.dto.NewsDto;
+import com.ll.multi_crawler.crawl.dto.NewsDto;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
